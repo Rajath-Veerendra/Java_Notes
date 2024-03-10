@@ -20,15 +20,16 @@
 
 ### For Instance 
 
-| Class             |               Object                   |
-| ----------------- | -------------------------------------- |
-| Factory           |                Car                     |
-| ----------------- | -------------------------------------- |
-| `Car1`            |    Properties   |   Functionalities    |
-| `Car2`            | -------------------------------------- |
-| `Car3`            |  `Model Name`   |        `Drive`       |
-| `Car4`            |    `Color`      |     `Lock/Unlock`    |
-| `Car5`            |    `Price`      |        `Music`       |
+| Class     | Object   |
+|-----------|----------|
+| Blueprint | Car      |
+
+| Car    |  Properties  |  Functionalities  |
+|--------|--------------|-------------------|
+| `Car1` | `Model Name` | `Drive`           |
+|        | `Color`      | `Lock/Unlock`     |
+|        | `Price`      | `Music`           |
+
 
 
 Now considering Factory and Car as an example,
