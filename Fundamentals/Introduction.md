@@ -4,35 +4,35 @@
 
 - [Principles of Java](#principles)
 - [Why Java is so popular?](#popular)
-- [How java works ?](#javaWorking)
+- [How Java works?](#javaWorking)
 - [First Program](#firstProgram)
 
-<h1>Java :</h1><h3>Java is a general purpose, high level, object oriented programming language.</h3>
+# Java :
+Java is a general-purpose, high-level, object-oriented programming language.
 
-<a name="principles">
-<h1>Principles of Java :</h1>
-</a>
-- Simple, Object Oriented and Familiar
+<a name="principles"></a>
+## Principles of Java :
+- Simple, Object-Oriented, and Familiar
 - Robust and Secure
-- Architecture Neutral and Portaable
-- Execute with High Performance
-- Interpreted, threaded and Dynamic
+- Architecture Neutral and Portable
+- Executes with High Performance
+- Interpreted, Threaded, and Dynamic
 
-<a name="popular">
-<h1>Why Java is so popular?</h1>
-</a>
+<a name="popular"></a>
+## Why Java is so popular?
 - Platform Independence
 - Fundamentally Object-oriented
 - Easy to learn
 - Versatile
 
-<a name="javaWorking">
-<h1>How java works?</h1>
-<p>Java Virtual machine can be present in any device. It must be present to run java code</p><br>
-</a>
+<a name="javaWorking"></a>
+## How Java works?
+Java Virtual Machine (JVM) can be present on any device. It must be present to run Java code.
 
 ![Image of How Java Works.](resources/java_working_2.png)
+
 ![Image of How Java Works.](resources/java-working.png)
+
 ![Image of How Java Works.](resources/java_working.gif)
 
 <a name="firstProgram">
