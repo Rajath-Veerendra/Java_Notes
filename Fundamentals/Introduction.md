@@ -11,20 +11,20 @@
 
 <a name="principles">
 <h1>Principles of Java :</h1>
+</a>
 - Simple, Object Oriented and Familiar
 - Robust and Secure
 - Architecture Neutral and Portaable
 - Execute with High Performance
 - Interpreted, threaded and Dynamic
-</a>
 
 <a name="popular">
 <h1>Why Java is so popular?</h1>
+</a>
 - Platform Independence
 - Fundamentally Object-oriented
 - Easy to learn
 - Versatile
-</a>
 
 <a name="javaWorking">
 <h1>How java works?</h1>
@@ -32,7 +32,7 @@
 </a>
 
 ![Image of How Java Works.](resources/java_working_2.png)
-![Image of How Java Works.](resources/java_working.png)
+![Image of How Java Works.](resources/java-working.png)
 ![Image of How Java Works.](resources/java_working.gif)
 
 <a name="firstProgram">
