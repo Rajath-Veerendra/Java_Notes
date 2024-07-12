@@ -32,7 +32,7 @@
 - Instance Variables : `Instance variables are non-static variables and are declared in a class outside of any method, constructor, or block.`
 - Static vriables : `Static variables are also known as class variables.`
 
-1##. Local Variable 
+###1. Local Variable 
 -These variables are created when the block is entered, or the function is called and destroyed after exiting from the block or when the call returns from the function.
 -The scope of these variables exists only within the block in which the variables are declared, i.e., we can access these variables only within that block.
 -Initialization of the local variable is mandatory before using it in the defined scope.
@@ -55,7 +55,7 @@ class GFG {
 
 ```
 
-##2. Instance Variables
+###2. Instance Variables
 -As instance variables are declared in a class, these variables are created when an object of the class is created and destroyed when the object is destroyed.
 -Unlike local variables, we may use access specifiers for instance variables. If we do not specify any access specifier, then the default access specifier will be used.
 -Initialization of an instance variable is not mandatory. Its default value is dependent on the data type of variable. For String it is null, for float it is 0.0f, for int it is 0, for Wrapper classes like Integer it is null, etc.
@@ -98,7 +98,7 @@ class GFG {
 
 ```
 
-##3. Static Variable
+###3. Static Variable
 -These variables are declared similarly to instance variables. The difference is that static variables are declared using the static keyword within a class outside of any method, constructor, or block.
 -Unlike instance variables, we can only have one copy of a static variable per class, irrespective of how many objects we create.
 Static variables are created at the start of program execution and destroyed automatically when execution ends.
