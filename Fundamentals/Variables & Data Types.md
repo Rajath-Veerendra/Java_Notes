@@ -6,8 +6,8 @@
 - [Rules](#rules)
 - [Types of Variables](#types)
 - [Datatypes](#datatypes)
-    - [Primitive Datatypes](#primitive)
-    - [Nonprimitive Datatypes](#nonprimitive)
+- [Typecasting](#typeCasting)
+- [Reading Input](#readingInput)
 
 
 <h1>Variable :</h1><h3>a variable is an abstract storage location paired with an associated symbolic name, which contains some known or unknown quantity of data or object referred to as a value</h3>
@@ -153,7 +153,7 @@ class GFG {
 |   the use of the keyword 'new' and |   when the program stops           |
 |   destroyed when the object is     |                                    |
 |   destroyed                        |                                    |  
-|------------------------------------|------------------------------------|
+
 
 
 ## Final Keyword
@@ -176,7 +176,7 @@ final double pi = 3.1475926;
 |									 |	int x,y,z;						  |
 |									 |  x=y=z=50;						  |
 |									 |									  |
-|------------------------------------|------------------------------------|
+
 
 ## Identifiers : 
 ### All variables must be declared/identified with unique names.
@@ -213,3 +213,142 @@ char ch1 = 88; // code for X
 char ch2 = 'Y';
 
 ```
+
+<a name="typeCasting"></a>
+
+## Typecasting
+`refers to changing the type of Data from one form to another`
+
+![datatypes](resources/typecasting.png)
+
+
+```java
+
+/***** Widening Typecasting *****/
+
+int i = 20;
+long rcb  = i;
+
+
+/***** Narrowing Typecasting *****/
+
+long ban = 1000000;  // !!!!---You cannot do this
+int ipl = ban;       
+
+long csk_Ban = 1000000;  // Explicitly Specified
+int ipl = int(csk_Ban);  // Now this is Correct :)     
+
+```
+`If not in range, Java will not give error, instead lossy conversion.(Number is lost)`
+
+<a name="readingInput"></a>
+
+## Reading Input : import java.util.Scanner;
+
+| Method        | Description                            |
+|---------------|----------------------------------------|
+| nextBoolean() | Reads a boolean value from the user     |
+| nextByte()    | Reads a byte value from the user        |
+| nextDouble()  | Reads a double value from the user      |
+| nextFloat()   | Reads a float value from the user       |
+| nextInt()     | Reads an int value from the user        |
+| nextLine()    | Reads a String value from the user      |
+| nextLong()    | Reads a long value from the user        |
+| nextShort()   | Reads a short value from the user       |
+
+
+```java
+
+import java.util.Scanner;
+
+public class UserInputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Reading boolean input
+        System.out.print("Enter a boolean (true/false): "); // e.g., true
+        boolean boolInput = scanner.nextBoolean();
+        System.out.println("Boolean entered: " + boolInput);
+
+        // Reading byte input
+        System.out.print("Enter a byte value: "); // e.g., 127
+        byte byteInput = scanner.nextByte();
+        System.out.println("Byte entered: " + byteInput);
+
+        // Reading double input
+        System.out.print("Enter a double value: "); // e.g., 123.45
+        double doubleInput = scanner.nextDouble();
+        System.out.println("Double entered: " + doubleInput);
+
+        // Reading float input
+        System.out.print("Enter a float value: "); // e.g., 12.34
+        float floatInput = scanner.nextFloat();
+        System.out.println("Float entered: " + floatInput);
+
+        // Reading int input
+        System.out.print("Enter an integer value: "); // e.g., 123
+        int intInput = scanner.nextInt();
+        System.out.println("Integer entered: " + intInput);
+
+        // Consume the newline character left by nextInt()
+        scanner.nextLine();
+
+        // Reading String input
+        System.out.print("Enter a string: "); // e.g., Hello World
+        String stringInput = scanner.nextLine();
+        System.out.println("String entered: " + stringInput);
+
+        // Reading long input
+        System.out.print("Enter a long value: "); // e.g., 123456789
+        long longInput = scanner.nextLong();
+        System.out.println("Long entered: " + longInput);
+
+        // Reading short input
+        System.out.print("Enter a short value: "); // e.g., 12345
+        short shortInput = scanner.nextShort();
+        System.out.println("Short entered: " + shortInput);
+
+        // Consume the newline character left by nextShort()
+        scanner.nextLine();
+
+        // Reading char input
+        System.out.print("Enter a single character: "); // e.g., A
+        char charInput = scanner.nextLine().charAt(0);
+        System.out.println("Character entered: " + charInput);
+
+        scanner.close();
+    }
+}
+
+```
+
+| Method       | Description                                                                                           | Example Program                                                                                                                                                                         |
+|--------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `next()`     | Reads the next token from the input. A token is usually a word separated by whitespace.                | ```java                                                                                                                                                                                  |
+|              | It does not consume the newline character after the token.                                             | import java.util.Scanner;                                                                                                                                                               |
+|              |                                                                                                        |                                                                                                                                                                                         |
+|              | ```java                                                                                                                                      | public class ScannerNextExample {                                                                                                                                                       |
+|              | Scanner scanner = new Scanner(System.in);                                                                 |     public static void main(String[] args) {                                                                                                                                              |
+|              | System.out.print("Enter a string: ");  // e.g., Hello World                                           |         Scanner scanner = new Scanner(System.in);                                                                                                                                       |
+|              | String token = scanner.next();  // Reads "Hello" and leaves "World" and newline in the input buffer   |                                                                                                                                                                                         |
+|              | System.out.println("Token: " + token);  // Output: Token: Hello                                       |         System.out.print("Enter a string using next(): ");  // e.g., Hello World                                                                  |
+|              |                                                                                                        |         String token = scanner.next();  // Reads "Hello" and leaves "World" and newline in the input buffer                                       |
+|              | ```                                                                                                                                           |         System.out.println("Token using next(): " + token);  // Output: Token: Hello                                                              |
+|              |                                                                                                        |                                                                                                                                                                                         |
+|              |                                                                                                        |         // Consume the remaining input                                                                                                                                                   |
+|              |                                                                                                        |         scanner.nextLine();                                                                                                                                                             |
+|              |                                                                                                        |                                                                                                                                                                                         |
+|              |                                                                                                        |         System.out.print("Enter a string using nextLine(): ");  // e.g., Hello World                                                               |
+| `nextLine()` | Reads the entire line of input, including spaces, until the newline character is encountered.         |         String line = scanner.nextLine();  // Reads the entire line including spaces                                                              |
+|              | It consumes and discards the newline character.                                                       |         System.out.println("Line using nextLine(): " + line);  // Output: Line: Hello World                                                       |
+|              |                                                                                                        |                                                                                                                                                                                         |
+|              | ```java                                                                                                                                      |         scanner.close();                                                                                                                                                                |
+|              | Scanner scanner = new Scanner(System.in);                                                                 |     }                                                                                                                                                                                   |
+|              | System.out.print("Enter a string: ");  // e.g., Hello World                                           | }                                                                                                                                                                                       |
+|              | String line = scanner.nextLine();  // Reads "Hello World" including spaces and newline character      | ```                                                                                                                                                                                     |
+|              | System.out.println("Line: " + line);  // Output: Line: Hello World                                     |                                                                                                                                                                                         |
+|              |                                                                                                        |                                                                                                                                                                                         |
+|              | ```                                                                                                                                           |                                                                                                                                                                                         |
+
+
+
