@@ -132,23 +132,84 @@ class GFG {
 }
 
 ```
-##Differences Between the Instance Variables and the Static Variables
+## Differences Between the Instance Variables and the Static Variables
 
 | Instance Variable                  | Static Variable                    |
 |------------------------------------|------------------------------------|
-| • Each object will have its        | whereas we can only have one copy  |
-|   own copy of an instance variable | of a static variable per class     |
+| • Each object will have its        | • we can only have one copy        |
+|   own copy of an instance variable |   of a static variable per class   |
+|									 |									  |
 | • Changes made in an instance      | • Changes will be reflected in     |
 |   variable using one object will   |   other objects as static variables|
 |   not be reflected in other objects|   are common to all objects of a   |
 |   as each object has its own copy  |   class                            |
 |   of the instance variable         |                                    |
+|									 |									  |
 | • We can access instance variables | • Static variables can be accessed |
 |   through object references        |   directly using the class name    |
+|									 |									  |
 | • Instance variables are created   | • Static variables are created when|
 |   when an object is created with   |   the program starts and destroyed |
 |   the use of the keyword 'new' and |   when the program stops           |
 |   destroyed when the object is     |                                    |
-|   destroyed                        |                                    |
+|   destroyed                        |                                    |  
+|------------------------------------|------------------------------------|
 
-  
+
+## Final Keyword
+
+`Final keyword is used for constants and read-only`
+
+```java
+//Here pi cannot be redefined
+final double pi = 3.1475926;
+
+```
+
+### Declare many variables:
+
+| Wrong Method                       | Correct Method                     |
+|------------------------------------|------------------------------------|
+| int x = 5;						 |	int x = 5; y = 9; z=10;			  |
+| int y = 9;						 |									  |
+| int z = 10;						 |				OR					  |
+|									 |	int x,y,z;						  |
+|									 |  x=y=z=50;						  |
+|									 |									  |
+|------------------------------------|------------------------------------|
+
+## Identifiers : 
+### All variables must be declared/identified with unique names.
+
+
+<a name="datatypes"></a>
+
+## Datatypes
+- Type of Data stored in Memeory location
+- Max and min value of range location
+- Different types of operations on memory location
+- Size of memory location
+
+
+![datatypes](resources/datatypes.png)
+
+
+![datatypes_range](resources/datatypes_range.png)
+
+```java
+
+// ---- Primitive Datatypes
+
+byte b = 100;
+short s = 123;
+int v = 123543;
+int calc = -9876345;
+long amountVal = 1234567891;
+float intrestRate = 12.25f;
+double sineval = 12345.234d;
+boolean flag = true;
+boolean val = false;
+char ch1 = 88; // code for X
+char ch2 = 'Y';
+
+```

@@ -31,7 +31,9 @@ Java Virtual Machine (JVM) can be present on any device. It must be present to r
 
 ![Image of How Java Works.](resources/java_working_2.png)
 
+
 ![Image of How Java Works.](resources/java-working.png)
+
 
 ![Image of How Java Works.](resources/java_working.gif)
 
