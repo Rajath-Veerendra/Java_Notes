@@ -322,33 +322,32 @@ public class UserInputExample {
 
 ```
 
-| Method       | Description                                                                                           | Example Program                                                                                                                                                                         |
-|--------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `next()`     | Reads the next token from the input. A token is usually a word separated by whitespace.                | ```java                                                                                                                                                                                  |
-|              | It does not consume the newline character after the token.                                             | import java.util.Scanner;                                                                                                                                                               |
-|              |                                                                                                        |                                                                                                                                                                                         |
-|              | ```java                                                                                                                                      | public class ScannerNextExample {                                                                                                                                                       |
-|              | Scanner scanner = new Scanner(System.in);                                                                 |     public static void main(String[] args) {                                                                                                                                              |
-|              | System.out.print("Enter a string: ");  // e.g., Hello World                                           |         Scanner scanner = new Scanner(System.in);                                                                                                                                       |
-|              | String token = scanner.next();  // Reads "Hello" and leaves "World" and newline in the input buffer   |                                                                                                                                                                                         |
-|              | System.out.println("Token: " + token);  // Output: Token: Hello                                       |         System.out.print("Enter a string using next(): ");  // e.g., Hello World                                                                  |
-|              |                                                                                                        |         String token = scanner.next();  // Reads "Hello" and leaves "World" and newline in the input buffer                                       |
-|              | ```                                                                                                                                           |         System.out.println("Token using next(): " + token);  // Output: Token: Hello                                                              |
-|              |                                                                                                        |                                                                                                                                                                                         |
-|              |                                                                                                        |         // Consume the remaining input                                                                                                                                                   |
-|              |                                                                                                        |         scanner.nextLine();                                                                                                                                                             |
-|              |                                                                                                        |                                                                                                                                                                                         |
-|              |                                                                                                        |         System.out.print("Enter a string using nextLine(): ");  // e.g., Hello World                                                               |
-| `nextLine()` | Reads the entire line of input, including spaces, until the newline character is encountered.         |         String line = scanner.nextLine();  // Reads the entire line including spaces                                                              |
-|              | It consumes and discards the newline character.                                                       |         System.out.println("Line using nextLine(): " + line);  // Output: Line: Hello World                                                       |
-|              |                                                                                                        |                                                                                                                                                                                         |
-|              | ```java                                                                                                                                      |         scanner.close();                                                                                                                                                                |
-|              | Scanner scanner = new Scanner(System.in);                                                                 |     }                                                                                                                                                                                   |
-|              | System.out.print("Enter a string: ");  // e.g., Hello World                                           | }                                                                                                                                                                                       |
-|              | String line = scanner.nextLine();  // Reads "Hello World" including spaces and newline character      | ```                                                                                                                                                                                     |
-|              | System.out.println("Line: " + line);  // Output: Line: Hello World                                     |                                                                                                                                                                                         |
-|              |                                                                                                        |                                                                                                                                                                                         |
-|              | ```                                                                                                                                           |                                                                                                                                                                                         |
+| Method       | Description                                                                                        | Use Case                                                                                         |
+|--------------|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `next()`     | Reads the next token from the input, delimited by whitespace. It does not consume the newline character left in the buffer. | Suitable for reading individual words or tokens separated by whitespace.                        |
+| `nextLine()` | Reads the remainder of the current line, including the newline character, and advances the scanner to the next line.        | Suitable for reading entire lines of text, including spaces between words, until the end of the line. |
+
+```java
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Using next()
+        System.out.print("Enter a word: ");
+        String word = scanner.next();
+        System.out.println("Word entered: " + word);
+
+        // Using nextLine()
+        scanner.nextLine(); // Consuming the leftover newline
+        System.out.print("Enter a line of text: ");
+        String line = scanner.nextLine();
+        System.out.println("Line entered: " + line);
+
+        scanner.close();
+    }
+}
 
 
 
