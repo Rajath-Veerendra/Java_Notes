@@ -12,8 +12,8 @@
 ## For Loops : 
 ### For loop is used to execute a block of code certain number of times (and times is known)
 
-`Syntax :  for(initialization ; condition ; update){`
-`             body                                  `
+`Syntax :  for(initialization ; condition ; update){`<br>
+`             body                                  `<br>
 `             }                                     `
 
 ```java
@@ -30,8 +30,8 @@ for( int i = 0 ; i < n; i++){ // also you can write( int i = 0, n = 10 ; i < n; 
 ## For Each Loop : 
 ### For each loop is used to run block of code of times the array size
 
-`Syntax :  for(type variableName : arrayName){      `
-`             body                                  `
+`Syntax :  for(type variableName : arrayName){      `<br>
+`             body                                  `<br>
 `             }                                     `
 
 ```java
@@ -52,8 +52,8 @@ for (String i : cars){
 ## While Loops : 
 ### While Loops are used when number of iterations are not known
 
-`Syntax :  while(condition){                        `
-`             body                                  `
+`Syntax :  while(condition){                        `<br>
+`             body                                  `<br>
 `             }                                     `
 
 ```java
@@ -68,9 +68,9 @@ while(i<10){
 ## Do While Loops : 
 ### Body inside do while is executed atleast once in worst case and they are Exit Controlled Loops
 
-`Syntax :  do{                                      `
-`             //Code  to be executed                `
-`             }                                     `
+`Syntax :  do{                                      `<br>
+`             //Code  to be executed                `<br>
+`             }                                     `<br>
 `             while(condition);                     `
 
 ```java
