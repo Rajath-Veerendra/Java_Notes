@@ -122,11 +122,11 @@ switch(weather){
 }
 
 ```
-### Lets write the above code using Enhanced Switch Case
+### Lets write the above code using "Enhanced Switch Case" method
 
 ```java
 
-// Enhanced Switch Case
+// In Enhanced Switch Case, no need of using break statements.
 
 switch(weather){
     case "Rainy" -> System.out.println("Take Umbrella");  // Single Code Lines
