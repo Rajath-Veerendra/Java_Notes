@@ -47,7 +47,7 @@ Java Virtual Machine (JVM) can be present on any device. It must be present to r
 public class Main{
 
 public static void main(String[] args){
-    System.out.println(" Ee sala Cup Namde! ")
+    System.out.println(" Ee sala Cup Namde! "); // prints  Ee sala Cup Namde! 
 }
 
 }
