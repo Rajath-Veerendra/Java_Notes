@@ -83,11 +83,8 @@ do{
 
 ```
 <a name="#break_continue"></a>
- 
- ## BREAK : 
+ ## Break AND Continue: 
  `Break statement is used to exit out of loop`
-
-  ## Continue : 
  `Continue statement is used to skip the iteration`
 
 ```java
