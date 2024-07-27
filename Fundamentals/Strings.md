@@ -20,15 +20,15 @@ String Pool resides in Heap memory
 |  "Hello"      |   
 |   "Ram"       | 
 
-    String S1 = "abc";
+    String s1 = "abc";
     String s2 = "Hello";
     String s3 = "Ram";
     String s4 = "Ram";
 
     String s5 = new String ("abc");  `New Object is Created`
 
-if( S1 == s5 ) returns false, bcoz it checks whether objects being referred are same<br>
-if( S3 == s4 ) returns true, bcoz it checks whether objects being referred are same
+if( s1 == s5 ) returns false, bcoz it checks whether objects being referred are same<br>
+if( s3 == s4 ) returns true, bcoz it checks whether objects being referred are same
 
 if(s1.equals( s5 )) returns true, bcoz it checks whether Contents are Same and not objects
 
@@ -89,9 +89,10 @@ if(s1.equals( s5 )) returns true, bcoz it checks whether Contents are Same and n
 ## String Concatenation : 
 
 `Concatenated using +`
+
     String str1 = "Hello";
     String str2 = "World";
-    System.out.println( str1 + str2);  //Hello World
+    System.out.println( str1 + str2) ;  //Hello World
 
 ### When we try to concatenate non-Primitive Datatypes, typecast to string
 
