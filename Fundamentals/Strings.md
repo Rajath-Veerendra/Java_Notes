@@ -117,12 +117,12 @@ if(s1.equals( s5 )) returns true, bcoz it checks whether Contents are Same and n
 
 `Since strings are immutable, we use String Builder to modify old instances`
 
-StringBuilder inp = new StringBuilder(" Water Bottle ");
+    StringBuilder inp = new StringBuilder(" Water Bottle ");
 
-    `inp.append( content );`                                     // inp.append(" and Lunch Box");
-    `inp.insert(Starting index, content );`                      // inp.insert( 13, "and Lunch Box" );
-    `inp.replace(Starting index, Ending index , content );`      // inp.insert(0 , 6, "Juice" );
-    `inp.delete(Starting index, Ending index);`                  // inp.delete(7,13);
+    inp.append( content );                                     // inp.append(" and Lunch Box");
+    inp.insert(Starting index, content );                      // inp.insert( 13, "and Lunch Box" );
+    inp.replace(Starting index, Ending index , content );      // inp.insert(0 , 6, "Juice" );
+    inp.delete(Starting index, Ending index);                  // inp.delete(7,13);
 
     String str = inp.toString();
 
