@@ -36,7 +36,7 @@ if(s1.equals( s5 )) returns true, bcoz it checks whether Contents are Same and n
 ## String Class Methods : 
 
 ### 1. .charAt(x)
-`.charAt(x) accessed the character at specified Index`
+`.charAt(x) accesses the character at specified Index`
 
     String name = "Ishu";
     System.out.println(name.charAt(2)); // returns h 
