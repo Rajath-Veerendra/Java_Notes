@@ -35,11 +35,14 @@ Eg:
 <a name="matrix"></a>
 ### Create a Matrix
  
-   __%20%20%20%20%20%20%20__
-o |%20%20%20%20%20%20%20%20%20%20%20|    int rows = 3;
+```plaintext
+   __       __
+0 |           |    int rows = 3;
 1 |           |    int columns = 4; 
 2 |__       __|    int[][] a = new int[rows][columns];
    0  1  2  3
+
+```
 
 <a name="print_matrix"></a>
 ### Printing the Matrix
@@ -81,4 +84,18 @@ o |%20%20%20%20%20%20%20%20%20%20%20|    int rows = 3;
 <a name="example"></a>
 ### Sum of two Matrices
 
+
+```plaintext
+
+    SAMPLE INPUT                            SAMPLE OUTPUT
+
+    rows = 2
+    columns = 2
+
+   __       __           __      __        __      __
+  | 1   2   3 |         | 10 20 30 |      | 11 22 33 |
+  | 4   5   6 |   +     | 40 50 60 |   =  | 44 55 66 |
+  |__       __|         |__      __|      |__      __|
+
+```
 
